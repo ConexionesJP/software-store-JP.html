@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ConexionesJP | Software Management</title>
+    <title>ConexionesJP | Soluciones Integrales</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root {
@@ -14,100 +14,117 @@
         body {
             margin: 0; padding: 0;
             background: radial-gradient(circle at center, #0a0a1a 0%, var(--dark-bg) 100%);
-            color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white; font-family: 'Segoe UI', sans-serif;
             text-align: center;
         }
-        header { padding: 60px 20px; }
+        header { padding: 40px 20px; }
         .logo-main {
-            width: 350px; max-width: 85%;
+            width: 300px; max-width: 80%;
             filter: drop-shadow(0 0 15px var(--jp-cyan));
-            margin-bottom: 10px;
         }
+        
+        .promo-banner {
+            background: rgba(188, 19, 254, 0.1);
+            padding: 20px; border-radius: 15px;
+            margin: 20px auto; max-width: 800px;
+            border: 1px dashed var(--jp-purple);
+            color: var(--jp-cyan); font-size: 1.1rem;
+        }
+
+        .section-title {
+            margin-top: 50px; color: var(--jp-purple);
+            text-transform: uppercase; letter-spacing: 3px;
+            font-size: 1.5rem;
+        }
+
         .container {
             display: flex; flex-wrap: wrap;
-            justify-content: center; gap: 30px;
-            padding: 20px 40px 60px 40px;
+            justify-content: center; gap: 25px;
+            padding: 20px;
         }
-        /* Estructura idéntica a Telecom pero con marca JP */
+
         .card {
             background: rgba(255, 255, 255, 0.03);
-            backdrop-filter: blur(12px);
+            backdrop-filter: blur(10px);
             border: 1px solid rgba(0, 210, 255, 0.2);
-            border-radius: 25px; width: 320px;
-            padding: 40px 25px; transition: 0.5s ease;
-            position: relative;
+            border-radius: 20px; width: 280px;
+            padding: 25px; transition: 0.4s;
+            display: flex; flex-direction: column;
+            justify-content: space-between;
         }
         .card:hover {
-            transform: translateY(-15px);
+            transform: translateY(-10px);
             border-color: var(--jp-purple);
-            box-shadow: 0 0 40px rgba(188, 19, 254, 0.2);
+            box-shadow: 0 0 30px rgba(188, 19, 254, 0.2);
         }
-        .icon-box {
-            font-size: 50px; color: var(--jp-cyan);
-            margin-bottom: 20px;
-        }
-        h3 { font-size: 1.5rem; margin-bottom: 15px; letter-spacing: 1px; }
-        p { font-size: 14px; color: #aaa; line-height: 1.6; min-height: 70px; }
-        .features-list {
-            text-align: left; font-size: 13px;
-            margin: 20px 0; color: #ddd;
-            list-style: none; padding: 0;
-        }
-        .features-list li { margin-bottom: 8px; }
-        .features-list li i { color: var(--jp-purple); margin-right: 8px; }
+        .icon-box { font-size: 45px; color: var(--jp-cyan); margin-bottom: 15px; }
         
-        .btn-action {
+        .btn-cotizar {
             text-decoration: none; color: white;
-            background: transparent; border: 2px solid var(--jp-cyan);
-            padding: 12px 30px; border-radius: 10px;
-            font-weight: bold; display: inline-block;
-            transition: 0.3s; width: 80%;
+            background: linear-gradient(45deg, var(--jp-purple), var(--jp-cyan));
+            padding: 18px 45px; border-radius: 50px;
+            font-weight: bold; font-size: 1.3rem;
+            display: inline-block; margin-top: 40px;
+            transition: 0.3s; box-shadow: 0 5px 15px rgba(188, 19, 254, 0.4);
         }
-        .btn-action:hover {
-            background: var(--jp-cyan); color: black;
-            box-shadow: 0 0 20px var(--jp-cyan);
-        }
+        .btn-cotizar:hover { transform: scale(1.05); box-shadow: 0 0 30px var(--jp-cyan); }
+        
+        h3 { margin: 10px 0; color: #fff; }
+        p { font-size: 0.9rem; color: #ccc; line-height: 1.4; }
     </style>
 </head>
 <body>
 
     <header>
         <img src="logo.png" class="logo-main" alt="ConexionesJP">
-        <h2 style="font-weight: 200; color: var(--jp-cyan);">EXHIBICIÓN DE SISTEMAS JP</h2>
+        <div class="promo-banner">
+            <i class="fas fa-tags"></i> 
+            <b>PROGRAMAS DESDE $100.000 HASTA $700.000</b> 
+            <br>¡Contamos con maravillosos descuentos para ti!
+        </div>
     </header>
 
+    <h2 class="section-title"><i class="fas fa-laptop-code"></i> Software & Sistemas</h2>
     <div class="container">
-        
         <div class="card">
-            <div class="icon-box"><i class="fas fa-server"></i></div>
+            <div class="icon-box"><i class="fas fa-database"></i></div>
             <h3>JP NETWORK CORE</h3>
-            <p>Estructura robusta para la gestión de datos y monitoreo de servicios en tiempo real.</p>
-            <ul class="features-list">
-                <li><i class="fas fa-check"></i> Base de datos unificada</li>
-                <li><i class="fas fa-check"></i> Monitoreo de activos</li>
-                <li><i class="fas fa-check"></i> Reportes automatizados</li>
-                <li><i class="fas fa-check"></i> Interfaz 100% personalizable</li>
-            </ul>
-            <a href="https://wa.me/57TU_NUMERO" class="btn-action">ADQUIRIR SISTEMA</a>
+            <p>Estructura de gestión y monitoreo profesional. Potencia y control total.</p>
         </div>
-
-        <div class="card" style="border-color: rgba(188, 19, 254, 0.3);">
-            <div class="icon-box" style="color: var(--jp-purple);"><i class="fas fa-user-shield"></i></div>
-            <h3>JP ADMIN SUITE</h3>
-            <p>Gestión de usuarios y permisos administrativos con alta seguridad criptográfica.</p>
-            <ul class="features-list">
-                <li><i class="fas fa-check"></i> Control de accesos</li>
-                <li><i class="fas fa-check"></i> Auditoría de procesos</li>
-                <li><i class="fas fa-check"></i> Encriptación de datos</li>
-                <li><i class="fas fa-check"></i> Soporte 24/7 JP</li>
-            </ul>
-            <a href="https://wa.me/57TU_NUMERO" class="btn-action" style="border-color: var(--jp-purple);">SOLICITAR INFO</a>
+        <div class="card">
+            <div class="icon-box"><i class="fas fa-user-lock"></i></div>
+            <h3>ADMIN SUITE</h3>
+            <p>Control de accesos y administración segura para tu negocio.</p>
         </div>
-
     </div>
 
-    <footer style="padding: 40px; opacity: 0.5; font-size: 12px;">
-        <p>CONEXIONES JP &copy; 2024 - SISTEMAS DE ALTA DISPONIBILIDAD</p>
+    <h2 class="section-title"><i class="fas fa-photo-video"></i> Multimedia</h2>
+    <div class="container">
+        <div class="card">
+            <div class="icon-box"><i class="fas fa-film"></i></div>
+            <h3>EDICIÓN DE VIDEO</h3>
+            <p>Ediciones profesionales (Mínimo hasta 15 min). Calidad garantizada para tus proyectos.</p>
+            <strong style="color: var(--jp-cyan); margin-top: 10px; display: block;">¡Desea información!</strong>
+        </div>
+    </div>
+
+    <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Académico</h2>
+    <div class="container">
+        <div class="card">
+            <div class="icon-box"><i class="fas fa-search"></i></div>
+            <h3>INVESTIGACIONES</h3>
+            <p>Actividades y trabajos para Universidad o Colegio. Estilo de investigación profesional y bachiller.</p>
+        </div>
+    </div>
+
+    <div style="padding-bottom: 80px;">
+        <a href="https://wa.me/573158204172?text=Hola%20ConexionesJP,%20vi%20tu%20página%20y%20deseo%20cotizar%20un%20servicio." class="btn-cotizar">
+            <i class="fab fa-whatsapp"></i> DESEO COTIZAR
+        </a>
+    </div>
+
+    <footer style="padding: 20px; opacity: 0.4; font-size: 13px; border-top: 1px solid rgba(255,255,255,0.1);">
+        &copy; 2024 Conexiones JP - Tecnología de Alto Nivel
     </footer>
 
 </body>
